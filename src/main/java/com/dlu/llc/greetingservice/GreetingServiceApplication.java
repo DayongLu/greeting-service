@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Optional;
 
 
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @SpringBootApplication
 public class GreetingServiceApplication {
 
