@@ -10,5 +10,10 @@ pipeline {
 
       }
     }
+
+    stage('deploy to PCF'){
+        pushToCloudFoundry cloudSpace: 'development', credentialsId: 'pwsCredential', organization: 'dlu-paradyme', selfSigned: true, target: 'api.run.pivotal.io'
+
+    }
   }
 }
