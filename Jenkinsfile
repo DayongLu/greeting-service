@@ -24,8 +24,8 @@ pipeline {
              ]
             }"""
 
+            server.upload(uploadSpec)
           }
-          server.upload(uploadSpec)
     }
 
     stage('deploy to PCF'){
