@@ -1,0 +1,15 @@
+---
+applications:
+- name: greeting-service
+  memory: 1024M
+  instances: 1
+  stack: cflinuxfs2
+  env:
+    logging.level.ROOT: INFO
+    spring.application.name: greeting-service
+    spring.application.index: ${random.uuid}
+    management.security.enabled: false
+  path: ./target/greeting-service-0.0.1-SNAPSHOT.jar
+#  services:
+#    - esoa-config
+#    - paradyme-registry-service
