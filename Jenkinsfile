@@ -1,6 +1,4 @@
-import jenkins.model.*
-
-node {
+node('master') {
     agent any
     def server
     def uploadSpec
