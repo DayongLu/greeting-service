@@ -1,5 +1,4 @@
 node('master') {
-    agent any
     def server
     def uploadSpec
     def buildInfo
